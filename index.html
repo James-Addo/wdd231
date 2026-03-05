@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Web Frontend Development I - James Emmanuel Addo</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I Course Home Page of James Emmanuel Addo">
+    <meta name="author" content="James Emmanuel Addo">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo" width="500" height="500">
+        <span>James Emmanuel Addo</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="chamber"><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <!-- <div class="about-me"> -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I am James Emmanuel Addo, a dedicated teacher from Ghana with a strong passion for
+                technology and innovation. Currently, I'm expanding my skill set through online studies in
+                Software and Web Development at Brigham Young University (BYU). My goal is to acquire
+                expertise in designing and developing cutting-edge software and websites that can make a
+                meaningful impact. I enjoy reading and playing the piano, finding inspiration and relaxation
+                in these creative pursuits.</p>
+        </section>
+        <!-- </div> -->
+        <!-- <div class="photo"> -->
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="James Emmanuel Addo Profile Picture" width="200">
+        </section>
+        <!-- </div> -->
+        <!-- <div> -->
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-filter">
+                <button id="all-courses" class="active">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div class="course-list"></div>
+            <p id="total-credits"></p>
+        </section>
+        <!-- </div> -->
+
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/james-emmanuel-addo-66262334a/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://github.com/James-Addo" target="_blank"><img src="images/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://web.facebook.com/annnammmuah" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                    width="16" height="16"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter" width="16"
+                    height="16"></a>
+        </div>
+        <p>©️<span id="currentyear"></span> 🌲 James Emmanuel Addo 🌲 Ghana</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
