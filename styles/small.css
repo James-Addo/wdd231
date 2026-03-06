@@ -2,7 +2,7 @@
     --primary-color: #9D0404;
     --secondary-color: #D3D3D3;
     --accent1-color: #F5F5F5;
-    --accent2-color: #3A3838;
+    --accent2-color: #222121;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Lato", sans-serif;
 }
@@ -138,7 +138,6 @@ h2 {
     color: white;
     text-align: center;
     background: linear-gradient(#012b72, #012b72);
-    opacity: 0.9;
     margin: 0;
     padding: 5px;
     border-radius: 10px 10px 0 0;
