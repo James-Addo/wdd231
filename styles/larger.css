@@ -30,7 +30,7 @@
 
     main {
         display: grid;
-        grid-template-columns: 2fr 510px;
+        grid-template-columns: 1fr minmax(300px, 510px);
         gap: 25px;
     }
 
