@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #120A8F;
-    --secondary-color: #BA160C;
+    --primary-color: #9D0404;
+    --secondary-color: #D3D3D3;
     --accent1-color: #F5F5F5;
-    --accent2-color: rgb(86, 49, 3);
+    --accent2-color: #3A3838;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Lato", sans-serif;
 }
@@ -14,9 +14,7 @@
 }
 
 body {
-    font-family: var(--body-font);
     line-height: 1.6;
-    color: #333;
     background-color: #f9f9f9;
 }
 
@@ -25,23 +23,21 @@ header {
     grid-template-columns: 100px auto 44px;
     padding: 5px 0 5px 10px;
     background-color: var(--accent1-color);
-    font-family: var(--heading-font);
     box-shadow: 5px 5px 10px grey;
 }
 
 header img {
     display: block;
     grid-column: 1/2;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 0 0 0 20px;
+    margin: 10px 5px 10px 20px;
 }
 
 header span {
-    font-size: 1.2em;
-    color: rgb(157, 4, 4);
+    color: var(--primary-color);
     grid-column: 2/3;
-    margin-left: 30px;
+    margin-left: 15px;
     height: 50px;
     margin-top: 30px;
     font-weight: bolder;
@@ -89,7 +85,7 @@ header span {
     padding: 0.8rem 10px;
     color: white;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     border-bottom: 1px solid black;
 }
@@ -102,14 +98,24 @@ header span {
 }
 
 .navigation li.home {
-    background-color: rgb(58, 56, 56);
+    background-color: var(--accent2-color);
 }
 
 /* Main */
-.about-me p {
-    padding: 15px 30px;
+h1,
+span,
+h2 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--body-font);
     font-size: 18px;
     color: black;
+}
+
+.about-me p {
+    padding: 15px 30px;
 }
 
 main {
@@ -118,19 +124,17 @@ main {
 
 section {
     margin-bottom: 7px;
-    background-color: #f7f4f4;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #E8E8E8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    color: rgb(157, 4, 4);
-    font-family: var(--heading-font);
+    color: var(--primary-color);
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-family: var(--heading-font);
     color: white;
     text-align: center;
     background: linear-gradient(#012b72, #012b72);
@@ -145,6 +149,7 @@ h2 {
     height: auto;
     margin: 15px auto;
     display: block;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .certificate h2 {
@@ -153,9 +158,10 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: white;
+    background-color: #E8E8E8;
     padding: 20px;
     text-align: center;
+    border-top: 1px solid black;
 }
 
 .socialmedia {
@@ -186,6 +192,9 @@ footer {
 
 /* .......... javascript dynamic display ............. */
 .course-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #90a991;
@@ -194,12 +203,18 @@ footer {
     color: black;
     font-weight: bold;
     font-family: var(--body-font);
-    text-align: center;
 }
 
 .course-card.completed {
-    background-color: #DBDBDB;
+    background-color: var(--secondary-color);
     border-color: #90a991;
+}
+
+.course-card.completed::before {
+    content: "\2713";
+    font-size: 1.5em;
+    color: darkblue;
+    margin-right: 10px;
 }
 
 .course-filter {
@@ -219,7 +234,7 @@ footer {
 }
 
 .course-filter button.active {
-    background-color: rgb(58, 56, 56);
+    background-color: var(--accent2-color);
     color: #fff;
 }
 

@@ -78,7 +78,6 @@ const courses = [
     }
 ]
 
-
 const courseList = document.querySelector('.course-list');
 const totalCreditsPoints = document.querySelector('#total-credits');
 
@@ -91,11 +90,9 @@ function displayCourses(courses) {
         if (course.completed) {
             courseCard.classList.add('completed');
         }
-        courseCard.innerHTML = `<h3>${course.subject}${course.number}</h3>`;
+        courseCard.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
         courseList.appendChild(courseCard);
-        if (course.completed) {
-            totalCredits += course.credits;
-        }
+        totalCredits += course.credits;
     });
     totalCreditsPoints.textContent = `The total credits for course listed above is ${totalCredits}`;
 }
