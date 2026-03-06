@@ -110,7 +110,7 @@ h2 {
 
 p {
     font-family: var(--body-font);
-    font-size: 18px;
+    font-size: 19px;
     color: black;
 }
 
@@ -191,7 +191,7 @@ footer {
 }
 
 /* .......... javascript dynamic display ............. */
-.course-card {
+.course-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,12 +205,12 @@ footer {
     font-family: var(--body-font);
 }
 
-.course-card.completed {
+.course-item.completed {
     background-color: var(--secondary-color);
     border-color: #90a991;
 }
 
-.course-card.completed::before {
+.course-item.completed::before {
     content: "\2713";
     font-size: 1.5em;
     color: darkblue;

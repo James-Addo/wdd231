@@ -78,20 +78,20 @@ const courses = [
     }
 ]
 
-const courseList = document.querySelector('.course-list');
+const courseContainer = document.querySelector('.course-container');
 const totalCreditsPoints = document.querySelector('#total-credits');
 
 function displayCourses(courses) {
-    courseList.innerHTML = '';
+    courseContainer.innerHTML = '';
     let totalCredits = 0;
     courses.forEach((course) => {
-        const courseCard = document.createElement('div');
-        courseCard.classList.add('course-card');
+        const courseItem = document.createElement('div');
+        courseItem.classList.add('course-item');
         if (course.completed) {
-            courseCard.classList.add('completed');
+            courseItem.classList.add('completed');
         }
-        courseCard.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
-        courseList.appendChild(courseCard);
+        courseItem.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        courseContainer.appendChild(courseItem);
         totalCredits += course.credits;
     });
     totalCreditsPoints.textContent = `The total credits for course listed above is ${totalCredits}`;
