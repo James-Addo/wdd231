@@ -1,0 +1,65 @@
+[
+    {
+        "companyName": "ABC Ghana Ltd",
+        "companyAddress": "P.O. Box 12345, Accra, Ghana",
+        "companyPhone": "+233 (0) 302 123 456",
+        "companyWebsite": "https://www.abcghana.com",
+        "imageFile": "abc-ghana.jpg",
+        "membershipLevel": 3,
+        "description": "ABC Ghana Ltd is a leading provider of innovative solutions in Ghana."
+    },
+    {
+        "companyName": "XYZ Enterprises",
+        "companyAddress": "P.O. Box 67890, Kumasi, Ghana",
+        "companyPhone": "+233 (0) 322 678 901",
+        "companyWebsite": "https://www.xyzenterprises.com",
+        "imageFile": "xyz-enterprises.jpg",
+        "membershipLevel": 2,
+        "description": "XYZ Enterprises is a dynamic company with a focus on customer satisfaction."
+    },
+    {
+        "companyName": "Ghana Brewers Ltd",
+        "companyAddress": "P.O. Box 34567, Accra, Ghana",
+        "companyPhone": "+233 (0) 302 345 678",
+        "companyWebsite": "https://www.ghanabrewers.com",
+        "imageFile": "ghana-brewers.jpg",
+        "membershipLevel": 1,
+        "description": "Ghana Brewers Ltd is a leading brewery in Ghana."
+    },
+    {
+        "companyName": "TCL Ghana Ltd",
+        "companyAddress": "P.O. Box 90123, Tema, Ghana",
+        "companyPhone": "+233 (0) 303 901 234",
+        "companyWebsite": "https://www.tclghana.com",
+        "imageFile": "tcl-ghana.jpg",
+        "membershipLevel": 3,
+        "description": "TCL Ghana Ltd is a leading electronics company in Ghana."
+    },
+    {
+        "companyName": "Unilever Ghana Ltd",
+        "companyAddress": "P.O. Box 45678, Accra, Ghana",
+        "companyPhone": "+233 (0) 302 456 789",
+        "companyWebsite": "https://www.unileverghana.com",
+        "imageFile": "unilever-ghana.jpg",
+        "membershipLevel": 2,
+        "description": "Unilever Ghana Ltd is a leading FMCG company in Ghana."
+    },
+    {
+        "companyName": "Nestle Ghana Ltd",
+        "companyAddress": "P.O. Box 78901, Accra, Ghana",
+        "companyPhone": "+233 (0) 302 789 012",
+        "companyWebsite": "https://www.nestleghana.com",
+        "imageFile": "nestle-ghana.jpg",
+        "membershipLevel": 1,
+        "description": "Nestle Ghana Ltd is a leading food and beverage company in Ghana."
+    },
+    {
+        "companyName": "MTN Ghana Ltd",
+        "companyAddress": "P.O. Box 23456, Accra, Ghana",
+        "companyPhone": "+233 (0) 302 234 567",
+        "companyWebsite": "https://www.mtnghana.com",
+        "imageFile": "mtn-ghana.jpg",
+        "membershipLevel": 3,
+        "description": "MTN Ghana Ltd is a leading telecommunications company in Ghana."
+    }
+]
