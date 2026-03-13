@@ -2,14 +2,19 @@
 
     header,
     main,
-    nav,
+    .allowance,
     footer {
-        max-width: 1500px;
+        max-width: 1400px;
         margin: 0 auto;
     }
 
     header {
-        grid-template-columns: 100px auto;
+        grid-template-columns: 100px auto 600px;
+    }
+
+    header span {
+        font-size: 1.5rem;
+        margin-top: 36px;
     }
 
     .hamburger {
@@ -18,50 +23,22 @@
 
     .navigation {
         display: block;
+        grid-column: 3/4;
     }
 
     .navigation ul {
         display: flex;
+        padding-top: 25px;
     }
 
     .navigation a {
         border: none;
     }
 
-.grid-view {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-
-/* main {
+    .grid-view {
         display: grid;
-        grid-template-columns: 1fr minmax(300px, 510px);
-        gap: 25px;
-    } */
-
-h1 {
-    grid-column: 1/3;
-    margin: 0;
-}
-
-/* .about-me {
-        grid-column: 1 / 2;
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    .photo {
-        grid-column: 2 / 3;
-    } */
-
-/* .certificate {
-        grid-column: 1 / 3;
-    }
-
-    .course-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    } */
 
     footer {
         background-color: #E8E8E8;
@@ -86,24 +63,5 @@ h1 {
     .socialmedia img {
         width: 30px;
         height: 30px;
-    }
-}
-
-
-@media (max-width: 767px) and (min-width: 481px) {
-    .grid-view {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .member-card img {
-        height: 120px;
-    }
-
-    .member-card h2 {
-        font-size: 16px;
-    }
-
-    .member-card p {
-        font-size: 12px;
     }
 }

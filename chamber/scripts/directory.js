@@ -1,4 +1,4 @@
-const mainContainer = document.querySelector('main');
+const mainContainer = document.querySelector('.main-container');
 
 async function fetchMembers() {
     try {
@@ -14,8 +14,8 @@ async function displayMembers(members) {
     mainContainer.innerHTML = `
     
     <div class="menu">
-      <button id="grid">Grid View</button>
-      <button id="list">List View</button>
+      <button id="grid">Grid</button>
+      <button id="list">List</button>
     </div>
     <div id="members-container" class="grid-view">
       <!-- member cards will be generated here -->
@@ -53,13 +53,10 @@ function displayGridView(members, container) {
         const memberCard = document.createElement('div');
         memberCard.classList.add('member-card');
         memberCard.innerHTML = `
-      <img src="images/${member.imageFile}" alt="${member.companyName}">
-      <h2>${member.companyName}</h2>
+<img src="images/${member.imageFile}" alt="${member.companyName}" loading="lazy">     
       <p>${member.companyAddress}</p>
       <p>${member.companyPhone}</p>
       <p><a href="${member.companyWebsite}" target="_blank">${member.companyWebsite}</a></p>
-      <p>Membership Level: ${member.membershipLevel}</p>
-      <p>${member.description}</p>
     `;
         container.appendChild(memberCard);
     });
@@ -76,7 +73,6 @@ function displayListView(members, container) {
           <th>Address</th>
           <th>Phone</th>
           <th>Website</th>
-          <th>Membership Level</th>
         </tr>
       </thead>
       <tbody>
@@ -93,7 +89,6 @@ function displayListView(members, container) {
       <td>${member.companyAddress}</td>
       <td>${member.companyPhone}</td>
       <td><a href="${member.companyWebsite}" target="_blank">${member.companyWebsite}</a></td>
-      <td>${member.membershipLevel}</td>
     `;
         tableBody.appendChild(tableRow);
     });

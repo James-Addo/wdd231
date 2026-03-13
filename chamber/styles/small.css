@@ -1,8 +1,8 @@
 :root {
     --primary-color: #9D0404;
-    --secondary-color: #D3D3D3;
+    --secondary-color: #e1dfdf;
     --accent1-color: #F5F5F5;
-    --accent2-color: #222121;
+    --accent2-color: #0c0478;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Lato", sans-serif;
 }
@@ -14,7 +14,6 @@
 }
 
 body {
-    /* line-height: 1.6; */
     background-color: #f9f9f9;
 }
 
@@ -35,13 +34,13 @@ header img {
 }
 
 header span {
-    color: var(--primary-color);
+    color: var(--accent2-color);
     grid-column: 2/3;
     margin-left: 15px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 39px;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .hamburger {
@@ -66,8 +65,7 @@ header span {
 /* Navigation */
 .navigation {
     display: none;
-    background: linear-gradient(#012b72, #012b72);
-    box-shadow: 5px 5px 10px grey;
+    grid-column: 1/4;
 }
 
 .navigation.show {
@@ -83,7 +81,7 @@ header span {
 .navigation a {
     display: block;
     padding: 0.8rem 10px;
-    color: white;
+    color: var(--primary-color);
     font-weight: bolder;
     font-size: 1.1rem;
     text-decoration: none;
@@ -92,42 +90,30 @@ header span {
 
 .navigation a:hover,
 .navigation a:active {
-    color: gold;
+    background-color: #fce5e5;
     font-weight: 1000;
     text-decoration: overline;
 }
 
-.navigation li.home {
+.navigation li.directory {
+    background-color: var(--secondary-color);
+}
+
+.allowance {
+    height: 10px;
     background-color: var(--accent2-color);
 }
-
 /* Main */
 h1,
-span,
-h2 {
+span {
     font-family: var(--heading-font);
-}
-
-p {
-    font-family: var(--body-font);
-    font-size: 19px;
-    color: black;
 }
 
 h1 {
     color: var(--primary-color);
     margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: white;
+    padding-bottom: 20px;
     text-align: center;
-    background: linear-gradient(#012b72, #012b72);
-    opacity: 0.9;
-    margin: 0;
-    padding: 5px;
-    border-radius: 10px 10px 0 0;
 }
 
 /* Footer */
@@ -158,6 +144,8 @@ footer {
     border: 1px solid #ccc;
     border-radius: 50%;
     padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .socialmedia img {
@@ -172,74 +160,64 @@ footer {
 
 /* ............... Members Css ...................... */
 main {
-    max-width: 1200px;
-    margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
     border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .menu button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: #fff;
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
     cursor: pointer;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    background: linear-gradient(#012b72, rgb(4, 67, 4));  
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
 }
 
 .menu button:hover {
-    background-color: #3e8e41;
+    background: rgb(4, 67, 4);
 }
 
-.list-view {
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f3f8f8;
+}
+
+.member-card img {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+p {
+    font-size: 19px;
+    color: black;
 }
 
 .grid-view {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-.member-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-}
-
-.member-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-.member-card h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.member-card p {
-    font-size: 14px;
-    color: #666;
-    flex-grow: 1;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 table {
@@ -256,4 +234,4 @@ td {
 
 th {
     background-color: #f0f0f0;
-}
+} 
