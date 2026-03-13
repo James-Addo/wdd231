@@ -9,7 +9,7 @@
     }
 
     header {
-        grid-template-columns: 100px auto 600px;
+        grid-template-columns: 100px auto auto;
     }
 
     header span {
@@ -28,7 +28,9 @@
 
     .navigation ul {
         display: flex;
+        justify-content: end;
         padding-top: 25px;
+        margin-right: 50px;
     }
 
     .navigation a {

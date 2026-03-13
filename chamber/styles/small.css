@@ -90,13 +90,13 @@ header span {
 
 .navigation a:hover,
 .navigation a:active {
-    background-color: #fce5e5;
+    background-color: #dcd7d7;
     font-weight: 1000;
     text-decoration: overline;
 }
 
 .navigation li.directory {
-    background-color: var(--secondary-color);
+    background-color: #fce5e5;
 }
 
 .allowance {
