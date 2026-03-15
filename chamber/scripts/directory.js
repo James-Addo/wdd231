@@ -53,10 +53,12 @@ function displayGridView(members, container) {
         const memberCard = document.createElement('div');
         memberCard.classList.add('member-card');
         memberCard.innerHTML = `
-<img src="images/${member.imageFile}" alt="${member.companyName}" loading="lazy">     
+<img src="images/${member.imageFile}" alt="${member.companyName}" loading="lazy">
+      <h2>${member.companyName}</h2>     
       <p>${member.companyAddress}</p>
       <p>${member.companyPhone}</p>
       <p><a href="${member.companyWebsite}" target="_blank">${member.companyWebsite}</a></p>
+      <p>Membership Level: ${member.membershipLevel}</p>
     `;
         container.appendChild(memberCard);
     });
@@ -73,6 +75,7 @@ function displayListView(members, container) {
           <th>Address</th>
           <th>Phone</th>
           <th>Website</th>
+          <th>Membership Level</th>
         </tr>
       </thead>
       <tbody>
@@ -89,6 +92,7 @@ function displayListView(members, container) {
       <td>${member.companyAddress}</td>
       <td>${member.companyPhone}</td>
       <td><a href="${member.companyWebsite}" target="_blank">${member.companyWebsite}</a></td>
+      <td>${member.membershipLevel}</td>
     `;
         tableBody.appendChild(tableRow);
     });

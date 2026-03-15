@@ -116,6 +116,16 @@ h1 {
     text-align: center;
 }
 
+.member-card h2 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background: linear-gradient(#012b72, #012b72);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Footer */
 footer {
     background-color: #E8E8E8;
@@ -197,7 +207,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: 380px;
     overflow: hidden;
     background-color: #f3f8f8;
 }
@@ -205,13 +215,19 @@ main {
 .member-card img {
     margin-bottom: 20px;
     width: 60%;
-    height: 50%;
+    height: 43%;
     border-radius: 10px 10px 0 0;
 }
 
 p {
     font-size: 19px;
     color: black;
+}
+
+.member-card p:last-child {
+    margin-top: 15px;
+    color: rgb(54, 46, 1);
+    font-weight: lighter;
 }
 
 .grid-view {
@@ -234,4 +250,9 @@ td {
 
 th {
     background-color: #f0f0f0;
+    text-align: center;
 } 
+
+table tbody tr td:nth-child(5) {
+    text-align: center;
+}
