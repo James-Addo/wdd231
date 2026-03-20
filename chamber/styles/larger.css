@@ -66,4 +66,23 @@
         width: 30px;
         height: 30px;
     }
+
+
+/* Home Page */
+    .cta-button {
+        right: 44.5%;
+        top: 7%;
+        padding: 10px 20px;
+        border: none;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .sub-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 20px;
+    }
 }
+
+

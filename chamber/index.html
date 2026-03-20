@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory page - WDD 231 Web Frontend Development I - James Emmanuel Addo</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I Chamber of Commerce Directory Page of James Emmanuel Addo">
+    <title>Home page - WDD 231 Web Frontend Development I - James Emmanuel Addo</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I Chamber of Commerce Home Page of James Emmanuel Addo">
     <meta name="author" content="James Emmanuel Addo">
     <meta property="og:title" content="WDD 231 Web Frontend Development I - James Emmanuel Addo">
-    <meta property="og:description" content="WDD 231 - Web Frontend Development I Chamber of Commerce Directory Page of James Emmanuel Addo">
+    <meta property="og:description"
+        content="WDD 231 - Web Frontend Development I Chamber of Commerce Home Page of James Emmanuel Addo">
     <meta property="og:image" content="https://james-addo.github.io/wdd231/chamber/logo.png">
     <meta property="og:url" content="https://james-addo.github.io/wdd231/chamber/directory.html">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+
+
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +37,7 @@
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="home"><a href="index.html">Home</a></li>
+                <li class="home"><a href="#">Home</a></li>
                 <li class="directory"><a href="directory.html">Directory</a></li>
                 <li class="join"><a href="#">Join</a></li>
                 <li class="discover"><a href="#">Discover</a></li>
@@ -44,18 +50,53 @@
     </div>
 
     <main>
-    <h1>Directory</h1>
-    <div class="main-container">
+        <section class="hero">
+            <img src="images/hero.webp" alt="Hero Picture">
+            <a href="#" target="_blank" class="cta-button">Join Us Today!</a>
+        </section>
+        <h1>Home</h1>
+        <div class="sub-main">
+            <section class="current-events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Tuesday 7:00pm : <span><strong>Business Networking Night</strong></span></li>
+                    <li>Wednesday 9:00am : <span><strong>Industry Insights Seminar</strong></span></li>
+                    <li>Thursday 11:00am : <span><strong>Charity Fundraiser</strong></span></li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                    <img id="weather-icon" src="" alt="">
+                    <div id="weather-indicator">
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <p id="temp-max"></p>
+                        <p id="temp-min"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>  
+                </div>
+            </section>
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-container">
+                    
+                </div>
+            </section>
+        </div>
+        <div class="spotlights">
 
-    </div>
+        </div>
 
     </main>
     <footer>
         <div class="address">
             <p>Ghana Chamber of Commerce<br>
-            P.O. Box 345, Accra, Ghana<br>
-            info@ghanacofc.org<br>
-            +233 (0) 542 723 854</p>
+                P.O. Box 345, Accra, Ghana<br>
+                info@ghanacofc.org<br>
+                +233 (0) 542 723 854</p>
 
         </div>
         <div class="socialmedia">
@@ -69,10 +110,10 @@
                     height="16"></a>
         </div>
         <div class="copyright">
-        <p>WDD231 Class Project</p>
-        <p>James Emmanuel Addo</p>
-        <p>©️<span id="currentyear"></span> - Ghana Chamber of Commerce</p>
-        <p id="lastmodified"></p>
+            <p>WDD231 Class Project</p>
+            <p>James Emmanuel Addo</p>
+            <p>©️<span id="currentyear"></span> - Ghana Chamber of Commerce</p>
+            <p id="lastmodified"></p>
         </div>
     </footer>
 </body>
