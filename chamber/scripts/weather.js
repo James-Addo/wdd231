@@ -39,7 +39,7 @@ apiFetch();
 
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`;
-    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('SRC', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
     temperature.innerHTML = `<strong>${data.main.temp}&deg;C</strong>`;
     description.innerHTML = data.weather[0].description;
