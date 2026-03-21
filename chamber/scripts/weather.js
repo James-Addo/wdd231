@@ -1,4 +1,5 @@
 const weatherIcon = document.querySelector('#weather-icon');
+const cityName = document.querySelector('#name');
 const temperature = document.querySelector('#temperature');
 const description = document.querySelector('#description');
 const tempMax = document.querySelector('#temp-max');
@@ -38,11 +39,13 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    const iconsrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`;
-    weatherIcon.setAttribute('SRC', iconsrc);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
-    temperature.innerHTML = `<strong>${data.main.temp}&deg;C</strong>`;
+    cityName.innerHTML = `City: <strong>${data.name}</strong>`;
+    temperature.innerHTML = `Temperature: <strong>${data.main.temp}&deg;C</strong>`;
     description.innerHTML = data.weather[0].description;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
+
     tempMax.innerHTML = `High: <strong>${data.main.temp_max}&deg</strong>`;
     tempMin.innerHTML = `Low: <strong>${data.main.temp_min}&deg</strong>`;
     humidity.innerHTML = `Humidity: <strong>${data.main.humidity}%</strong>`;
@@ -60,14 +63,19 @@ function displayResults(data) {
 
 function displayForecast(data) {
     const forecastContainer = document.querySelector('#forecast-container');
-    const dailyForecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
+    const dailyForecast = data.list.filter(item => item.dt_txt.includes("00:00:00")).slice(0, 3);
     forecastContainer.innerHTML = "";
-    dailyForecast.forEach(day => {
+    const today = new Date();
+    dailyForecast.forEach((day, index) => {
         const date = new Date(day.dt * 1000);
-        const dayName = date.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'Europe/London' });
-        const temp = Math.round(day.main.temp);
+        let dayLabel;
+        if (index === 0) {
+            dayLabel = 'Today';
+        } else {
+            dayLabel = date.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' });
+        }
         const forecastItem = document.createElement('div');
-        forecastItem.innerHTML = `${dayName}: <strong>${temp}&deg;C</strong>`;
+        forecastItem.innerHTML = `${dayLabel}: <strong>${day.main.temp}&deg;C</strong>`;
         forecastContainer.appendChild(forecastItem);
     });
 }

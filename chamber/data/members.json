@@ -5,8 +5,10 @@
         "companyPhone": "+233 (0) 322 103 411",
         "companyWebsite": "https://www.tutumotors.com",
         "imageFile": "tutu-logo.webp",
-        "membershipLevel": 3,
-        "description": "Tutu Motors is a leading automotive company in Ghana, providing sales, service, and maintenance for a range of vehicle brands."    },
+        "membershipLevel": 1,
+        "description": "Tutu Motors is a leading automotive company in Ghana, providing sales, service, and maintenance for a range of vehicle brands.",
+        "tagline": "Driving Your Dreams"
+    },
     {
         "companyName": "Akwaba Foods",
         "companyAddress": "P.O. Box 6490, Accra, Ghana",
@@ -14,7 +16,9 @@
         "companyWebsite": "https://www.akwabafoods.com",
         "imageFile": "akwaba-food.webp",
         "membershipLevel": 1,
-        "description": "Akwaba Foods is a Ghanaian food processing company that specializes in producing traditional Ghanaian dishes and snacks for local and international markets."    },
+        "description": "Akwaba Foods is a Ghanaian food processing company that specializes in producing traditional Ghanaian dishes and snacks for local and international markets.",
+        "tagline": "Taste the Tradition"
+    },
     {
         "companyName": "Ghana Textiles Company",
         "companyAddress": "P.O. Box 1535, Koforidua, Ghana",
@@ -22,7 +26,9 @@
         "companyWebsite": "https://www.ghanatex.com",
         "imageFile": "gtp-logo.webp",
         "membershipLevel": 2,
-        "description": "Ghana Textiles Company is a leading manufacturer of high-quality textiles and garments in Ghana, producing traditional and modern designs for local and international markets."    },
+        "description": "Ghana Textiles Company is a leading manufacturer of high-quality textiles and garments in Ghana, producing traditional and modern designs for local and international markets.",
+        "tagline": "Weaving Excellence"
+    },
     {
         "companyName": "TCL Ghana Ltd",
         "companyAddress": "P.O. Box 9123, Tema, Ghana",
@@ -30,7 +36,8 @@
         "companyWebsite": "https://www.tclghana.com",
         "imageFile": "tcl-logo.webp",
         "membershipLevel": 3,
-        "description": "TCL Ghana Ltd is a leading electronics company in Ghana."
+        "description": "TCL Ghana Ltd is a leading electronics company in Ghana.",
+        "tagline": "The Future, Today"
     },
     {
         "companyName": "Unilever Ghana Ltd",
@@ -39,7 +46,8 @@
         "companyWebsite": "https://www.unileverghana.com",
         "imageFile": "unilever-logo.webp",
         "membershipLevel": 2,
-        "description": "Unilever Ghana Ltd is a leading FMCG company in Ghana."
+        "description": "Unilever Ghana Ltd is a leading FMCG company in Ghana.",
+        "tagline": "Making a Difference, Every Day"
     },
     {
         "companyName": "Nestle Ghana Ltd",
@@ -47,8 +55,9 @@
         "companyPhone": "+233 (0) 302 789 012",
         "companyWebsite": "https://www.nestleghana.com",
         "imageFile": "nestle-logo.webp",
-        "membershipLevel": 1,
-        "description": "Nestle Ghana Ltd is a leading food and beverage company in Ghana."
+        "membershipLevel": 3,
+        "description": "Nestle Ghana Ltd is a leading food and beverage company in Ghana.",
+        "tagline": "Nourishing Life, Ghana"
     },
     {
         "companyName": "MTN Ghana Ltd",
@@ -57,6 +66,7 @@
         "companyWebsite": "https://www.mtnghana.com",
         "imageFile": "mtn-logo.webp",
         "membershipLevel": 3,
-        "description": "MTN Ghana Ltd is a leading telecommunications company in Ghana."
+        "description": "MTN Ghana Ltd is a leading telecommunications company in Ghana.",
+        "tagline": "Everywhere You Go"
     }
 ]

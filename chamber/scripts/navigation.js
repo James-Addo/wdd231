@@ -6,14 +6,10 @@ navButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
 });
 
-const currentUrl = window.location.pathname;
-const navLinks = document.querySelectorAll('.navigation a');
+const navLinks = document.querySelectorAll('.navigation li a');
 
 navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-
-    if ((linkHref === "" && currentUrl === "/") || currentUrl.endsWith(linkHref)) {
-        link.parentElement.classList.add('active');
+    if (link.href === window.location.href) {
+        link.parentElement.classList.add('current');
     }
 });
-

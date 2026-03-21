@@ -94,13 +94,13 @@ header span {
     text-decoration: overline;
 }
 
-.navigation li:active {
-    background-color: #fce5e5;
+.navigation li.current {
+  background-color: #fce5e5;
 }
 
-.navigation li a:active {
-    color: #000;
-    font-weight: 1000;
+.navigation li.current a {
+  color: #000;
+  font-weight: 1000;
 }
 
 .allowance {
@@ -233,13 +233,63 @@ p {
     color: black;
 }
 
-.member-card p:last-child {
+.spotlights {
+    margin-top: 20px;
+}
+
+.spotlight-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #f3f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    grid-column: 1/3;
+}
+
+#name p {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: darkred;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#sub-card {
+    margin-bottom: 40px;
+}
+
+#name h2 {
+    border-radius: 10px 0 0;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.spotlight-card img {
+    display: block;
+    margin: 0 auto 70px;
+    width: 80%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    grid-column: 1/2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.spotlight-card p:last-child, .member-card p:last-child {
     margin-top: 15px;
     color: rgb(54, 46, 1);
     font-weight: lighter;
 }
 
-.grid-view {
+.spotlights, .grid-view {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -301,7 +351,7 @@ table tbody tr td:nth-child(5) {
 }
 
 .cta-button:hover {
-    background-color: rgb(3, 3, 106);
+    background-color: rgb(8, 102, 8);
     transform: scale(1.05);
 }
 
@@ -309,7 +359,6 @@ table tbody tr td:nth-child(5) {
     grid-column: 1/2;
     font-size: 1.1rem;
     text-decoration: none;
-
 }
 
 .current-events ul {
@@ -323,6 +372,11 @@ table tbody tr td:nth-child(5) {
 
 .weather {
     grid-column: 2/3;
+}
+
+.sub-main h2 {
+    background: black;
+    opacity: 0.9;
 }
 
 .forecast {
@@ -339,7 +393,7 @@ table tbody tr td:nth-child(5) {
     margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     padding-bottom: 20px;
-    background-color:#d3d9df;
+    background-color: rgb(210, 210, 226);
 }
 
 #current-weather {
@@ -361,24 +415,24 @@ table tbody tr td:nth-child(5) {
     margin-left: 10px;
 }
 
-.spotlights {
+/* .spotlights {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
-.spotlight-card {
+/* .spotlight-card {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: calc(33.33% - 40px);
-}
+} */
 
-.spotlight-card img {
+/* .spotlight-card img {
     width: 100%;
     height: 100px;
     object-fit: contain;
     margin-bottom: 10px;
-}
+} */
