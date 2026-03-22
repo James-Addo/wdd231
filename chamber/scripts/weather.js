@@ -43,12 +43,8 @@ function displayResults(data) {
     temperature.innerHTML = `Temperature: <strong>${data.main.temp}&deg;C</strong>`;
     description.innerHTML = data.weather[0].description;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    if (iconsrc) {
-        weatherIcon.src = iconsrc;
-        weatherIcon.alt = data.weather[0].description;
-    }
-    // weatherIcon.setAttribute('src', iconsrc);
-    // weatherIcon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', data.weather[0].description);
 
     tempMax.innerHTML = `High: <strong>${data.main.temp_max}&deg</strong>`;
     tempMin.innerHTML = `Low: <strong>${data.main.temp_min}&deg</strong>`;
