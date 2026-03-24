@@ -15,17 +15,13 @@ async function displaySpotlights() {
         randomMembers.forEach(member => {
             const spotlightCard = ` 
         <div class="spotlight-card"> 
-          <div id="name"> 
             <h2>${member.companyName}</h2> 
-            <p>${member.tagline}</p> 
-          </div> 
-          <img src="images/${member.imageFile}" alt="${member.companyName}" loading="lazy"> 
-          <div id="sub-card"> 
+            <p>${member.tagline}</p>  
+          <img src="images/${member.imageFile}" alt="${member.companyName}" loading="lazy">
             <p>${member.companyAddress}</p> 
             <p>${member.companyPhone}</p> 
             <p><a href="${member.companyWebsite}" target="_blank">${member.companyWebsite}</a></p> 
             <p>Membership Level: ${member.membershipLevel}</p> 
-          </div> 
         </div> 
       `;
             spotlightContainer.innerHTML += spotlightCard;
