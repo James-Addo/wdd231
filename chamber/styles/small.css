@@ -163,8 +163,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 50%;
     padding: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0 25px 0
 }
 
 .socialmedia img {
@@ -523,10 +522,7 @@ input:invalid:not(:placeholder-shown)+.error-message {
 .card {
     background: linear-gradient(to bottom, var(--accent1-color), #979797);
     border: 1px solid var(--secondary-color);
-    border-top-left-radius: 0;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 0;
+    border-radius: 80px 0 80px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -568,12 +564,10 @@ input:invalid:not(:placeholder-shown)+.error-message {
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-weight: bolder;
-    margin-bottom: 5px;
+    margin: 0 auto 5px auto;
     border-bottom: none;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 dialog {
@@ -586,8 +580,7 @@ dialog {
     padding: 1rem;
     background-color: #ffffff;
     box-shadow: 0 0 3rem #777;
-    width: 90%;
-    max-width: 600px;
+    width: 40%;
 }
 
 ::backdrop {
@@ -680,8 +673,7 @@ h3 {
 }
 
 #response {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0 15px 0;
 }
 
 .application-details p {
