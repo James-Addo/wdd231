@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 768px) {
 
     header,
     main,
@@ -14,7 +14,6 @@
 
     header span {
         font-size: 1.5rem;
-        margin-top: 36px;
     }
 
     .hamburger {
@@ -68,7 +67,7 @@
     }
 
 
-/* Home Page */
+    /* Home Page */
     .cta-button {
         right: 44.5%;
         top: 7%;
@@ -83,6 +82,22 @@
         grid-template-columns: 2fr 1fr 1fr;
         gap: 20px;
     }
-}
 
+    /* Join Us Page */
+    .joinmain-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .membership-cards {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+
+}
 

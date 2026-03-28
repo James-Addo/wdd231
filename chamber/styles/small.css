@@ -37,10 +37,9 @@ header span {
     color: var(--accent2-color);
     grid-column: 2/3;
     margin-left: 15px;
-    height: 50px;
-    margin-top: 39px;
     font-weight: bolder;
     font-size: 1.3rem;
+    align-self: center;
 }
 
 .hamburger {
@@ -52,6 +51,7 @@ header span {
     font-family: var(--body-font);
     font-weight: bold;
     grid-column: 3/4;
+    align-self: center;
 }
 
 .hamburger::before {
@@ -87,6 +87,10 @@ header span {
     text-decoration: none;
     border-bottom: 1px solid black;
 }
+
+
+
+
 
 .navigation a:hover {
     background-color: #dcd7d7;
@@ -402,4 +406,306 @@ table tbody tr td:nth-child(5) {
 
 #weather-indicator {
     margin-left: 10px;
+}
+
+
+/* ........... Join Us Page .............. */
+#join-h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.joinmain-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+#apply-h2 {
+    text-align: center;
+    color: darkblue;
+    font-size: 1.5rem;
+    background: none;
+    padding: 8px 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+}
+
+#level-h2 {
+    text-align: center;
+    color: darkblue;
+    font-size: 1.5rem;
+    background: none;
+    padding: 8px 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f6ecec;
+}
+
+.form-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--body-font);
+    color: rgb(5, 5, 82);
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--body-font);
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--body-font);
+    width: 200px;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent2-color);
+}
+
+.web-form input:required {
+    border-right: solid 8px var(--primary-color);
+}
+
+.web-form select:required {
+    border-right: solid 8px var(--primary-color);
+}
+
+.web-form textarea:required {
+    border-right: solid 8px var(--primary-color);
+}
+
+.web-form input:required:valid {
+    border-right: solid 8px green;
+}
+
+.web-form select:required:valid {
+    border-right: solid 8px green;
+}
+
+.web-form textarea:required:valid {
+    border-right: solid 8px green;
+}
+
+.error-message {
+    display: none;
+    color: rgb(38, 37, 37);
+    font-size: 12px;
+}
+
+input:invalid:not(:placeholder-shown)+.error-message {
+    display: block;
+}
+
+.membership-cards {
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 750px;
+    overflow-y: auto;
+}
+
+.card {
+    background: linear-gradient(to bottom, var(--accent1-color), #979797);
+    border: 1px solid var(--secondary-color);
+    border-top-left-radius: 0;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 0.5s forwards;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#np-card {
+    animation-delay: 0.2s;
+}
+
+#bronze-card {
+    animation-delay: 0.4s;
+}
+
+#silver-card {
+    animation-delay: 0.6s;
+}
+
+#gold-card {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h3 {
+    margin-top: 0;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-weight: bolder;
+    margin-bottom: 5px;
+    border-bottom: none;
+}
+
+dialog {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: .25rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background: linear-gradient(to bottom, rgba(240, 248, 255, 0.7), rgba(230, 242, 255, 0.7));
+}
+
+.modal-button {
+    background: linear-gradient(#012b72, #012b72);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+#closeButton {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--body-font);
+}
+
+.modal h3 {
+    color: var(--primary-color);
+    background-color: #f6ecec;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5rem #777;
+    margin-left: 0;
+}
+
+.modal ul li {
+    color: darkblue;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+.modal ul li:first-child {
+    margin-top: 10px;
+}
+
+.modal ul li:last-child {
+    margin-bottom: 15px;
+}
+
+.modal p {
+    font-style: italic;
+    color: black;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+/* ..........Thank You Page............. */
+.thankyou-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: var(--body-font);
+}
+
+#thankyou-h2 {
+    color: var(--primary-color);
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: rgb(6, 6, 123);
+    margin-left: 30px;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+}
+
+.application-details {
+    background: linear-gradient(to bottom, #F0F8FF, #E6F2FF);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+#response {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.application-details p {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: black;
+}
+
+.application-details p:first-child {
+    margin-top: 20px;
+}
+
+.application-details span {
+    font-weight: bold;
+    font-size: 18px;
 }

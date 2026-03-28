@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page Ghana Chamber of Commerce Membership - WDD 231 Web Frontend Development I</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Ghana Chamber of Commerce Membership Join Page">
+    <meta name="author" content="James Emmanuel Addo">
+    <meta property="og:title" content="Ghana Chamber of Commerce Membership Join Page - 231 Web Frontend Development I">
+    <meta property="og:description"
+        content="WDD 231 - Web Frontend Development I - Ghana Chamber of Commerce Membership Join Page">
+    <meta property="og:image" content="https://james-addo.github.io/wdd231/chamber/logo.png">
+    <meta property="og:url" content="https://james-addo.github.io/wdd231/chamber/join.html">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" width="1" height="1">
+        <span>Ghana Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="allowance">
+        <p class="moto">Empowering Business, Building Our Future</p>
+    </div>
+
+    <main>
+        <h1 id="join-h1">Join Us</h1>
+        <div class="joinmain-container">
+            <div class="form-container">
+                <h2 id="apply-h2">Membership Application Form</h2>
+                <form action="thankyou.html" method="get" class="web-form">
+                    <label>
+                        First Name:
+                        <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+                    </label>
+                    <label>
+                        Last Name:
+                        <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+                    </label>
+                    <label>
+                        Organizational Title:
+                        <input type="text" name="title" title="Organization Title" autocomplete="organization-title"
+                            pattern="^[a-zA-Z\-\s]{7,}$" placeholder=" ">
+                        <span class="error-message">Please enter a valid title (only letters, hyphens, and spaces,
+                            minimum 7 characters)</span>
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" title="Email" autocomplete="email"
+                            placeholder="example@example.com" required>
+                    </label>
+                    <label>
+                        Mobile Phone:
+                        <input type="tel" name="mobilePhone" title="Please enter a 10-digit phone number"
+                            autocomplete="tel" pattern="[0-9]{10}" required>
+                    </label>
+                    <label>
+                        Business/Organization Name:
+                        <input type="text" name="businessName" title="Business/Organization Name"
+                            autocomplete="organization" required>
+                    </label>
+                    <label>
+                        Membership Level:
+                        <select name="membershipLevel" title="Membership Level" required>
+                            <option value="">Select a level ...</option>
+                            <option value="np">NP Membership (Non-Profit, no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>
+                        Business/Organization Description:
+                        <textarea name="description" title="Business/Organization Description" required></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                    <input type="submit" value="Apply for Membership">
+                </form>
+            </div>
+            <div class="membership-cards">
+                <h2 id="level-h2">Membership Levels</h2>
+                <div class="card" id="np-card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="openButton1" class="modal-button">Learn More</button>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="openButton2" class="modal-button">Learn More</button>
+                </div>
+                <div class="card" id="silver-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="openButton3" class="modal-button">Learn More</button>
+                </div>
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="openButton4" class="modal-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <dialog id="dialogBox">
+            <div class="modal"></div>
+            <button id="closeButton">Close</button>
+        </dialog>
+
+    </main>
+    <footer>
+        <div class="address">
+            <p>Ghana Chamber of Commerce<br>
+                P.O. Box 345, Accra, Ghana<br>
+                info@ghanacofc.org<br>
+                +233 (0) 542 723 854</p>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/james-emmanuel-addo-66262334a/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://github.com/James-Addo" target="_blank"><img src="images/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://web.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter" width="16"
+                    height="16"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>James Emmanuel Addo</p>
+            <p>©️<span id="currentyear"></span> - Ghana Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
