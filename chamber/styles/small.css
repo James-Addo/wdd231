@@ -414,15 +414,7 @@ table tbody tr td:nth-child(5) {
     gap: 40px;
 }
 
-#apply-h2 {
-    text-align: center;
-    color: darkblue;
-    font-size: 1.5rem;
-    background: none;
-    padding: 8px 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
-}
-
+#apply-h2,
 #level-h2 {
     text-align: center;
     color: darkblue;
@@ -444,7 +436,6 @@ form {
 
 .form-container {
     grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 label {
@@ -462,21 +453,16 @@ textarea {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid var(--secondary-color);
-    border-radius: 5px;
     font-size: 16px;
     font-family: var(--body-font);
-    box-sizing: border-box;
 }
 
 input[type="submit"] {
     display: block;
     background-color: var(--primary-color);
-    color: var(--accent1-color);
+    color: white;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-family: var(--body-font);
     width: 200px;
     margin: 0 auto;
 }
@@ -514,7 +500,6 @@ input:invalid:not(:placeholder-shown)+.error-message {
 .membership-cards {
     justify-content: center;
     grid-column: 1/2;
-    grid-row: 2/3;
     height: 750px;
     overflow-y: auto;
 }
