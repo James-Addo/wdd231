@@ -88,10 +88,6 @@ header span {
     border-bottom: 1px solid black;
 }
 
-
-
-
-
 .navigation a:hover {
     background-color: #dcd7d7;
     font-weight: 1000;
@@ -179,7 +175,6 @@ footer {
 .socialmedia a:hover {
     background-color: #ddd;
 }
-
 
 /* ............... Members Css ...................... */
 main {
@@ -408,7 +403,6 @@ table tbody tr td:nth-child(5) {
     margin-left: 10px;
 }
 
-
 /* ........... Join Us Page .............. */
 #join-h1 {
     color: var(--primary-color);
@@ -584,6 +578,10 @@ input:invalid:not(:placeholder-shown)+.error-message {
     font-weight: bolder;
     margin-bottom: 5px;
     border-bottom: none;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 dialog {
@@ -656,7 +654,6 @@ dialog {
     font-size: 17px;
     margin-top: 15px;
 }
-
 
 /* ..........Thank You Page............. */
 .thankyou-container {
