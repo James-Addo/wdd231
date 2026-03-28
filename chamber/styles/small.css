@@ -357,7 +357,7 @@ table tbody tr td:nth-child(5) {
 
 .weather,
 .forecast {
-    grid-column: 2/3, 3/4;
+    grid-column: span 1;
 }
 
 .sub-main h2 {
