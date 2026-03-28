@@ -494,19 +494,11 @@ input[type="submit"]:hover {
     border-right: solid 8px var(--primary-color);
 }
 
-.web-form textarea:required {
-    border-right: solid 8px var(--primary-color);
-}
-
 .web-form input:required:valid {
     border-right: solid 8px green;
 }
 
 .web-form select:required:valid {
-    border-right: solid 8px green;
-}
-
-.web-form textarea:required:valid {
     border-right: solid 8px green;
 }
 
