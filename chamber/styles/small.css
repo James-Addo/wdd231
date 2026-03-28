@@ -111,7 +111,9 @@ header span {
 
 /* Main */
 h1,
-span {
+span,
+h2,
+h3 {
     font-family: var(--heading-font);
 }
 
@@ -526,9 +528,7 @@ input:invalid:not(:placeholder-shown)+.error-message {
 }
 
 .card h3 {
-    font-family: var(--heading-font);
     color: var(--primary-color);
-    font-weight: bolder;
     margin: 0 auto 5px auto;
     border-bottom: none;
     text-align: center;
@@ -555,23 +555,16 @@ dialog {
 .modal-button {
     background: linear-gradient(#012b72, #012b72);
     color: white;
-    border: none;
     padding: 10px;
-    font-size: 16px;
     cursor: pointer;
-    font-family: var(--body-font);
-    font-weight: lighter;
-    border-radius: 10px;
 }
 
 #closeButton {
     background-color: var(--primary-color);
     color: var(--accent1-color);
-    border: none;
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
-    font-family: var(--body-font);
 }
 
 .modal h3 {
