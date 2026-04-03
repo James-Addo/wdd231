@@ -545,7 +545,7 @@ dialog {
     padding: 1rem;
     background-color: #ffffff;
     box-shadow: 0 0 3rem #777;
-    width: 40%;
+    width: 60%;
 }
 
 ::backdrop {
@@ -647,4 +647,75 @@ h3 {
 .application-details span {
     font-weight: bold;
     font-size: 18px;
+}
+
+
+/* ............. Discover Page ............. */
+.cardDiv {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "address"
+        "description"
+        "button";
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.cardDiv h2 {
+    grid-area: name;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.cardDiv figure {
+    grid-area: image;
+}
+
+.cardDiv figure img {
+    width: 100%;
+    height: auto;
+}
+
+.cardDiv address {
+    grid-area: address;
+    margin: 10px 0 0 0;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    color: var(--primary-color);
+}
+
+.cardDiv p {
+    grid-area: description;
+    margin: 10px 0 20px 0;
+    padding: 0 10px 0 20px;
+    font-size: 17px;
+}
+
+.cardDiv button {
+    background-color: rgb(2, 69, 2);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    text-decoration: none;
+    grid-area: button;
+    max-width: 130px;
+    margin: 0 auto 10px auto;
+}
+
+.visitor-info {
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#history {
+    margin-bottom: 15px;
 }

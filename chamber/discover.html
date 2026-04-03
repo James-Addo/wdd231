@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory page - WDD 231 Web Frontend Development I - James Emmanuel Addo</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I Chamber of Commerce Directory Page of James Emmanuel Addo">
+    <title>Ghana Chamber of Commerce Home Page - WDD 231 Web Frontend Development I</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Ghana Chamber of Commerce Home Page">
     <meta name="author" content="James Emmanuel Addo">
-    <meta property="og:title" content="WDD 231 Web Frontend Development I - James Emmanuel Addo">
-    <meta property="og:description" content="WDD 231 - Web Frontend Development I Chamber of Commerce Directory Page of James Emmanuel Addo">
+    <meta property="og:title" content="Ghana Chamber of Commerce Home Page - 231 Web Frontend Development I">
+    <meta property="og:description"
+        content="WDD 231 - Web Frontend Development I - Ghana Chamber of Commerce Home Page">
     <meta property="og:image" content="https://james-addo.github.io/wdd231/chamber/logo.png">
-    <meta property="og:url" content="https://james-addo.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://james-addo.github.io/wdd231/chamber/index.html">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 
@@ -44,18 +47,23 @@
     </div>
 
     <main>
-    <h1>Directory</h1>
-    <div class="main-container">
-
-    </div>
-
+        <h1>Discover Ghana</h1>
+        <div class="visitor-info"></div>
+        <div class="picture-gallery">
+            
+        </div>
+        <dialog id="dialogBox">
+            <div class="modal"></div>
+            <button id="closeButton">Close</button>
+        </dialog>
     </main>
+
     <footer>
         <div class="address">
             <p>Ghana Chamber of Commerce<br>
-            P.O. Box 345, Accra, Ghana<br>
-            info@ghanacofc.org<br>
-            +233 (0) 542 723 854</p>
+                P.O. Box 345, Accra, Ghana<br>
+                info@ghanacofc.org<br>
+                +233 (0) 542 723 854</p>
 
         </div>
         <div class="socialmedia">
@@ -69,10 +77,10 @@
                     height="16"></a>
         </div>
         <div class="copyright">
-        <p>WDD231 Class Project</p>
-        <p>James Emmanuel Addo</p>
-        <p>©️<span id="currentyear"></span> - Ghana Chamber of Commerce</p>
-        <p id="lastmodified"></p>
+            <p>WDD231 Class Project</p>
+            <p>James Emmanuel Addo</p>
+            <p>©️<span id="currentyear"></span> - Ghana Chamber of Commerce</p>
+            <p id="lastmodified"></p>
         </div>
     </footer>
 </body>
