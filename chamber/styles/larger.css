@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
     header,
     main,
     .allowance,
@@ -96,14 +96,16 @@
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    
-   .picture-gallery {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       gap: 0 20px;
-   }
+}
 
-    .cardDiv figure img:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    }
+@media only screen and (min-width: 1025px) {
+    .picture-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 20px;
+        }
+    
+        .cardDiv figure img:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
 }
