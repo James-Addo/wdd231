@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Flight Bookings",
+        "image": "images/flight-booking.webp",
+        "description": "Domestic and international airline ticketing across major carriers.",
+        "features": [
+            "GDS integration",
+            "Real-time fare updates",
+            "Seat selection",
+            "Multi-city itinerary planning",
+            "24/7 flight rebooking support",
+            "Frequent flyer miles integration"
+        ]
+    },
+    {
+        "name": "Hotel Accommodations",
+        "image": "images/accommodation.webp",
+        "description": "Reservations for hotels, resorts, and vacation rentals worldwide.",
+        "features": [
+            "3-5 star options",
+            "All-inclusive resorts",
+            "Daily breakfast included",
+            "Early check-in/Late check-out options",
+            "Loyalty program discounts",
+            "Direct room-view requests"
+        ]
+    },
+    {
+        "name": "Transportation & Car Rentals",
+        "image": "images/transport.webp",
+        "description": "Ground transport solutions including car hires and airport transfers.",
+        "features": [
+            "Luxury car rentals",
+            "Airport pickup/drop-off",
+            "Private chauffeurs",
+            "Child safety seat availability",
+            "GPS and Wi-Fi equipped vehicles",
+            "Flexible one-way rental options"
+        ]
+    },
+    {
+        "name": "Visa & Documentation",
+        "image": "images/visa.webp",
+        "description": "Guidance and processing for visas, passports, and travel permits.",
+        "features": [
+            "Application review",
+            "Interview prep",
+            "Expedited processing",
+            "E-visa digital support",
+            "Embassy appointment scheduling",
+            "Document translation services"
+        ]
+    },
+    {
+        "name": "Travel Insurance",
+        "image": "images/insurance.webp",
+        "description": "Comprehensive coverage for health, cancellations, and lost luggage.",
+        "features": [
+            "Medical emergency cover",
+            "Trip interruption",
+            "Baggage protection",
+            "24/7 global emergency assistance",
+            "COVID-19 related coverage",
+            "Adventure sports add-ons"
+        ]
+    }
+]

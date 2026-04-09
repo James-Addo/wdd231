@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana Travel & Tour Company Home Page - WDD 231 Web Frontend Development I</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Ghana Travel & Tour Company Home Page">
+    <meta name="author" content="James Emmanuel Addo">
+    <meta property="og:title" content="Ghana Travel & Tour Company Home Page - 231 Web Frontend Development I">
+    <meta property="og:description"
+        content="WDD 231 - Web Frontend Development I - Ghana Travel & Tour Company Home Page">
+    <meta property="og:image" content="https://james-addo.github.io/wdd231/project/logo.jpg">
+    <meta property="og:url" content="https://james-addo.github.io/wdd231/project/index.html">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/book.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-medium.css">
+    <link rel="stylesheet" href="styles/project-larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo" width="1" height="1">
+        <span>Ghana Travel & Tour Company</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="allowance">
+    </div>
+    <main>
+        <h2 id="book-tour-h2">Book a Tour</h2>
+        <form class="booking-form" method="get" action="confirmation.html">
+            <label>Full Name:
+                <input type="text" id="name" name="name" required title="Please enter your full name">
+            </label>
+            <label>Email:
+                <input type="email" id="email" name="email" placeholder="example@example.com" required
+                    title="Please enter your email address">
+            </label>
+            <label>Phone Number:
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+                    title="Please enter your phone number" autocomplete="tel">
+            </label>
+            <label>Select Tour:
+                <select id="tour" name="tour" required title="Please select a tour">
+                    <option value="">Select a tour</option>
+                    <option value="Kwame Nkrumah Memorial Park Tour">Kwame Nkrumah Memorial Park Tour</option>
+                    <option value="Savannah & Sacred Ponds Tour">Savannah & Sacred Ponds Tour</option>
+                    <option value="The Deer Hunt Heritage Tour">The Deer Hunt Heritage Tour</option>
+                    <option value="Nzulezu Stilt Village Adventure">Nzulezu Stilt Village Adventure</option>
+                    <option value="The Ghana National Museum">The Ghana National Museum</option>
+                    <option value="The Taste of Ghana Culinary Tour">The Taste of Ghana Culinary Tour</option>
+                    <option value="Cape Coast Castle Heritage Tour">Cape Coast Castle Heritage Tour</option>
+                    <option value="Mole National Park Safari">Mole National Park Safari</option>
+                    <option value="The Lake Bosomtwe Experience">The Lake Bosomtwe Experience</option>
+                    <option value="The Wli Waterfalls Trek">The Wli Waterfalls Trek</option>
+                    <option value="The Larabanga Ancient Mosque Tour">The Larabanga Ancient Mosque Tour</option>
+                    <option value="Tafi Atome Monkey Sanctuary & Cultural Village Tour">Tafi Atome Monkey Sanctuary Tour</option>
+                </select>
+            </label>
+            <label>Number of Participants:
+                <input type="number" id="participants" name="participants" min="1" required
+                    title="Please enter the number of participants">
+            </label>
+            <label>Preferred Date:
+                <input type="date" id="date" name="date" required title="Please select a preferred date">
+            </label>
+            <label>Additional Information:
+                <textarea id="message" name="message" title="Please enter any additional information"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Book Now">
+        </form>
+
+    </main>
+    <footer>
+        <div class="address">
+            <p>Ghana Travel & Tour Company<br>
+                Spintex Road, Accra, Greater Accra Region, Ghana<br>
+                info@ghanatnt.com<br>
+                +233 (0) 446 723 764</p>
+
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.linkedin.com/in/james-emmanuel-addo-66262334a/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://github.com/James-Addo" target="_blank"><img src="images/github.svg" alt="github" width="16"
+                    height="16"></a>
+            <a href="https://web.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter" width="16"
+                    height="16"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Final Project</p>
+            <p>James Emmanuel Addo</p>
+            <p>©️<span id="currentyear"></span> - Ghana Travel & Tour Company</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

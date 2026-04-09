@@ -1,0 +1,128 @@
+[
+    {
+        "tour_name": "Kwame Nkrumah Memorial Park Tour",
+        "category": "Historical",
+        "location": "Accra, Greater Accra Region",
+        "description": "This tour honors the legacy of Ghana’s first president, Dr. Kwame Nkrumah. Set on the historic grounds where independence was declared, this site offers a deep look into the Pan-African struggle and national pride today. It is truly a landmark. You will feel inspired here.",
+        "image_url": "images/memorial-park.webp",
+        "tour_highlights": [
+            "Explore the world-class museum housing personal artifacts and his 1961 Cadillac.",
+            "Visit the marble mausoleum where the remains of the Osagyefo are laid to rest.",
+            "Stand at the exact spot where independence was proclaimed in 1957.",
+            "Walk through the landscaped park featuring symbolic bronze statues.",
+            "Watch the choreographed musical water fountains."
+        ]
+    },
+    {
+        "tour_name": "Savannah & Sacred Ponds Tour",
+        "category": "Wildlife",
+        "location": "Paga, Upper East Region",
+        "description": "Journey to the northern frontier where you will experience the mystical connection between humans and crocodiles at Paga. This tour explores the deep cultural roots and the region’s ancient wildlife traditions in a unique environment. It is a stunning sight. Discover this mystery today.",
+        "image_url": "images/paga.webp",
+        "tour_highlights": [
+            "Sit on and touch live friendly crocodiles.",
+            "Learn about the sacred bond between residents and reptiles.",
+            "Take iconic photos with the pond's oldest inhabitants.",
+            "Hear the local legends of the royal family’s souls.",
+            "Experience traditional Northern hospitality at the pond site."
+        ]
+    },
+    {
+        "tour_name": "The Deer Hunt Heritage Tour",
+        "category": "Cultural",
+        "location": "Winneba, Central Region",
+        "description": "The Aboakyir Festival tour takes you to Winneba to witness one of Ghana’s most ancient and daring warrior traditions. This experience is designed for travelers who want to see the intense competition between local groups. It remains a legendary event. Join the vibrant local celebration now.",
+        "image_url": "images/festival.webp",
+        "tour_highlights": [
+            "Watch the thrilling race to catch a live deer with bare hands.",
+            "Witness the colorful grand durbar of chiefs in palanquins.",
+            "Hear the rhythmic chanting of the Penkye Otu warrior groups.",
+            "Join the vibrant street processions through the historic town.",
+            "Enjoy traditional brass band music at the beachfront celebration."
+        ]
+    },
+    {
+        "tour_name": "Nzulezu Stilt Village Adventure",
+        "category": "Cultural",
+        "location": "Beyin, Western Region",
+        "description": "This eco-adventure takes you to the famous 'Village on Water,' a UNESCO site built entirely on stilts. Accessible only by a scenic canoe trip, this tour highlights a unique way of life that has thrived for many centuries of history. It is a magical hidden gem.",
+        "image_url": "images/nzulezu.webp",
+        "tour_highlights": [
+            "Enjoy a peaceful 45-minute guided canoe ride through lush swamp forest and mangroves.",
+            "Walk along the 'Main Street'—a long wooden pier connecting the village's homes and businesses.",
+            "Learn about the village's legendary origins involving a sacred snail totem.",
+            "Visit the local school and community center built above the water.",
+            "Experience traditional life including fishing and local gin production."
+        ]
+    },
+    {
+        "tour_name": "The Ghana National Museum Tour",
+        "category": "Historical",
+        "location": "Adabraka, Accra",
+        "description": "Opened in 1957 to celebrate independence, Ghana’s largest museum serves as a time capsule of African heritage. It houses a vast collection of archaeological finds and treasures that trace the nation’s journey to the modern era. You will love it. Explore our great national story.",
+        "image_url": "images/museum.webp",
+        "tour_highlights": [
+            "Explore the three main galleries focused on archaeology, ethnography, and art.",
+            "View sacred Asante ancestral stools and elaborate royal regalia.",
+            "See the diverse collection of traditional musical instruments and gold weights.",
+            "Walk through the sculpture garden featuring statues of historical figures like Kwame Nkrumah.",
+            "Learn about the transatlantic slave trade through dedicated historical exhibits."
+        ]
+    },
+    {
+        "tour_name": "The Taste of Ghana Culinary Tour",
+        "category": "Cultural",
+        "location": "Accra & Kumasi (Multi-city)",
+        "description": "The Ghanaian Kitchen tour is a sensory journey through the diverse flavors and cooking techniques of Ghana's major ethnic groups. This package is designed for food lovers who want to learn deep cultural stories today. It is a delicious experience. Come and enjoy every local bite.",
+        "image_url": "images/culinary.webp",
+        "tour_highlights": [
+            "Join a hands-on Fufu pounding session in a traditional Ashanti village.",
+            "Learn the secret spices of Jollof rice during a private coastal cooking class.",
+            "Visit a traditional salt-mining community in Ada to see ancient harvesting methods.",
+            "Taste Waakye (rice and beans) served in the iconic green 'katemfe' leaves.",
+            "Participate in a palm wine tapping demonstration in a central region forest."
+        ]
+    },
+    {
+        "tour_name": "Cape Coast Castle Heritage Tour",
+        "category": "Historical",
+        "location": "Cape Coast, Central Region",
+        "description": "A profound journey through a poignant symbol of the Trans-Atlantic Slave Trade. This UNESCO World Heritage site offers an emotional and educational exploration of the 'Gate of No Return' and the resilient spirit of Africa. It is a powerful journey. We must always remember this history.",
+        "image_url": "images/castle.webp",
+        "tour_highlights": [
+            "Walk through the 'Door of No Return' the final exit point for millions of enslaved Africans.",
+            "Descend into the dark underground dungeons to understand the harrowing history of the trade.",
+            "Visit the Palaver Hall where European merchants and local chiefs negotiated trade terms.",
+            "Explore the Castle Museum which houses historical artifacts, maps, and shackles from the colonial era.",
+            "Stand on the castle ramparts for a panoramic view of the Atlantic Ocean and local fishing fleets."
+        ]
+    },
+    {
+        "tour_name": "Mole National Park Safari",
+        "category": "Wildlife",
+        "location": "Damongo, Savannah Region",
+        "description": "Experience Ghana’s largest wildlife refuge. This safari takes you through pristine savannah and riverine ecosystems, offering an up-close encounter with majestic elephants and diverse West African wildlife within one of the nation's most beautiful protected areas. It is truly breathtaking. See nature at its very best.",
+        "image_url": "images/national-park.webp",
+        "tour_highlights": [
+            "Embark on a guided walking safari to see African elephants in their natural habitat.",
+            "Observe over 90 mammal species, including baboons, warthogs, and various antelopes.",
+            "Enjoy panoramic views of the park’s watering holes from the Mole Motel viewpoint.",
+            "Take a traditional canoe safari on the Mole River at the nearby Mognori Eco-Village.",
+            "Explore the ancient Larabanga Mosque, the oldest Sudanese-style mosque in Ghana."
+        ]
+    },
+    {
+        "tour_name": "The Lake Bosomtwe Experience",
+        "category": "Cultural",
+        "location": "Kumasi, Ashanti Region",
+        "description": "Visit Ghana’s only natural lake, formed by a meteorite impact. This tour blends the serene beauty of the sacred lake with the rich spiritual traditions of the Ashanti who believe it is a holy gateway. The view is absolutely spectacular. Experience the peaceful atmosphere today.",
+        "image_url": "images/lake.webp",
+        "tour_highlights": [
+            "Take a traditional wooden plank boat ride (padua) on the lake.",
+            "Learn about the ancient taboos that forbid modern metal boats on the water.",
+            "Hike or bike along the scenic lake trails through lush tropical vegetation.",
+            "Visit lakeside fishing communities to see local preservation techniques.",
+            "Relax at a lakefront resort and enjoy the peaceful, misty atmosphere."
+        ]
+    }
+]
