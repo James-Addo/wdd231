@@ -36,7 +36,7 @@
     }
 
     .hero p {
-        font-size: 2rem;
+        font-size: 1.7rem;
         top: 17%;
     }
 
@@ -54,7 +54,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
         
-    .services-container, .grid-view {
+    .grid, .services-container, .grid-view {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -79,15 +79,6 @@
         width: 100%;
         grid-column: 2/3;
         margin-top: 30px;
-    }
-
-    .section {
-        grid-template-columns: 200px 2fr;
-        align-items: center;
-    }
-
-    .section h2 {
-        margin: 20px;
     }
 
     footer {

@@ -134,7 +134,7 @@ header span {
     transform: translateX(-50%);
     color: black;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 0 1rem;
     width: 100%;
@@ -146,6 +146,10 @@ span,
 h2,
 h3 {
     font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--body-font);
 }
 
 h1 {
@@ -295,13 +299,13 @@ dialog {
 }
 
 .tour-card p {
-    font-size: 17px;
+    font-size: 16px;
     grid-area: description;
     margin: 10px 0 20px 0;
     padding: 0 10px 0 20px;
 }
 
-.tour-card button {
+.cta-button, .tour-card button {
     background-color: rgb(4, 4, 74);
     color: #fff;
     padding: 10px;
@@ -310,11 +314,11 @@ dialog {
     cursor: pointer;
     text-decoration: none;
     grid-area: button;
-    max-width: 130px;
+    max-width: 170px;
     margin: 0 auto 10px auto;
 }
 
-#tour-button {
+#in-touch, #tour-button {
     background-color: rgb(84, 6, 6);
     color: #fff;
     padding: 10px 15px;
@@ -328,28 +332,15 @@ dialog {
     font-weight: bolder;
 }
 
-#tour-button:hover {
+#book-now:hover, #in-touch:hover, #tour-button:hover {
     background-color: rgb(2, 69, 2);
 }
 
 .cta-button {
-    background-color: rgb(2, 69, 2);
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 20px auto;
     display: block;
 }
 
-.cta-button:hover {
-    background-color: rgb(3, 3, 57);
-    transform: scale(1.05);
-}
-
+#services-p,
 #testimonial-p,
 #tour-title,
 #destination-title {
@@ -362,8 +353,12 @@ dialog {
     margin-bottom: 20px;
 }
 
+#services-p {
+    margin: 20px 0 -20px;
+}
+
 #testimonial-p {
-    margin-top: 10px;
+    margin-top: 35px;
 }
 
 /* ............Testimonial.............. */
@@ -395,13 +390,8 @@ dialog {
 
 
 /* ...........Tours Page/destination-card.................. */
-#services-h1,
 #tour-h1 {
     color: black;
-}
-
-#services-h1 {
-    margin-bottom: 30px;
 }
 
 .grid-view,
@@ -449,7 +439,7 @@ dialog {
 }
 
 #tours-card-p2 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tours-card address {
@@ -470,6 +460,7 @@ dialog {
 }
 
 .service-card p {
+    padding: 10px;
     font-style: italic;
     font-weight: bold;
     font-size: 17px;
@@ -478,10 +469,6 @@ dialog {
 
 .service-card ul {
     margin: 0 0 10px 30px;
-}
-
-.service-card p,
-ul {
     padding: 10px;
 }
 
@@ -554,67 +541,13 @@ ul {
     width: 50px;
 }
 
-/* ..........About Us Page................ */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-#about-us {
-    margin-bottom: 3rem;
-}
-
-.section {
-    display: grid;
-    grid-template-columns: 1fr;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-}
-
-.section p {
-    padding: 20px;
-    font-size: 18px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-#vision-p {
-    background: linear-gradient(#012b72, #012b72);
-    color: white;
-}
-
-#history-p,
-#mission-p {
-    background-color: #f6ecec;
-}
-
-#history,
-#vision,
-#mission {
-    background: none;
-    color: var(--primary-color);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
-}
-
-#history {
-    margin: 15px 0 7px 0;
-}
-
-#vision,
-#mission {
-    margin: 30px 0 7px 0;
-}
-
 #why-choose-us h2 {
+    margin-top: 10px;
     text-align: center;
+    font-size: 21px;
     background: none;
     color: var(--secondary-color);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
 }
 
 .about-card {
@@ -762,7 +695,8 @@ input[type="submit"]:hover {
     border-right: solid 8px green;
 }
 
-.contact-container {
+.grid,
+.grid.contact-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -778,7 +712,7 @@ input[type="submit"]:hover {
 }
 
 #connect-p {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     font-style: italic;
     margin: 10px 0 0 45px;
@@ -786,13 +720,10 @@ input[type="submit"]:hover {
 }
 
 .map iframe {
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
     width: 350px;
     height: 240px;
 }
-
-
-
 /* ............End....................... */
 
 

@@ -63,5 +63,18 @@
             "COVID-19 related coverage",
             "Adventure sports add-ons"
         ]
+    },
+    {
+        "name": "Event & Conference Planning",
+        "image": "images/conference.webp",
+        "description": "End-to-end planning for corporate events, conferences, and meetings.",
+        "features": [
+            "Venue selection",
+            "Logistics management",
+            "Accommodation arrangements",
+            "Transportation coordination",
+            "Event marketing",
+            "Budget management"
+        ]
     }
 ]
