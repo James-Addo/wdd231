@@ -821,3 +821,10 @@ h3 {
 #top-destination, #tour-image, #our-services {
     margin-left: 30px;
 }
+
+.home-section h2, .tour-section h2 {
+    background: none;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: left;
+}
