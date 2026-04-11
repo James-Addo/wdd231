@@ -62,7 +62,7 @@
         "description": "Opened in 1957 to celebrate independence, Ghana’s largest museum serves as a time capsule of African heritage. It houses a vast collection of archaeological finds and treasures that trace the nation’s journey to the modern era. You will love it. Explore our great national story.",
         "image_url": "images/museum.webp",
         "tour_highlights": [
-            "Explore the three main galleries focused on archaeology, ethnography, and art.",
+            "Explore the three main galleries focused on archaeology and art.",
             "View sacred Asante ancestral stools and elaborate royal regalia.",
             "See the diverse collection of traditional musical instruments and gold weights.",
             "Walk through the sculpture garden featuring statues of historical figures like Kwame Nkrumah.",
@@ -93,7 +93,7 @@
             "Walk through the 'Door of No Return' the final exit point for millions of enslaved Africans.",
             "Descend into the dark underground dungeons to understand the harrowing history of the trade.",
             "Visit the Palaver Hall where European merchants and local chiefs negotiated trade terms.",
-            "Explore the Castle Museum which houses historical artifacts, maps, and shackles from the colonial era.",
+            "Explore the Castle Museum which houses historical artifacts and maps from the colonial era.",
             "Stand on the castle ramparts for a panoramic view of the Atlantic Ocean and local fishing fleets."
         ]
     },
@@ -105,10 +105,10 @@
         "image_url": "images/national-park.webp",
         "tour_highlights": [
             "Embark on a guided walking safari to see African elephants in their natural habitat.",
-            "Observe over 90 mammal species, including baboons, warthogs, and various antelopes.",
+            "Observe over 90 mammal species.",
             "Enjoy panoramic views of the park’s watering holes from the Mole Motel viewpoint.",
             "Take a traditional canoe safari on the Mole River at the nearby Mognori Eco-Village.",
-            "Explore the ancient Larabanga Mosque, the oldest Sudanese-style mosque in Ghana."
+            "Explore the ancient Larabanga Mosque; The oldest Sudanese-style mosque in Ghana."
         ]
     },
     {
@@ -122,7 +122,49 @@
             "Learn about the ancient taboos that forbid modern metal boats on the water.",
             "Hike or bike along the scenic lake trails through lush tropical vegetation.",
             "Visit lakeside fishing communities to see local preservation techniques.",
-            "Relax at a lakefront resort and enjoy the peaceful, misty atmosphere."
+            "Relax at a lakefront resort and enjoy the peaceful and misty atmosphere."
+        ]
+    },
+    {
+        "tour_name": "Tafi Atome Monkey Sanctuary Adventure",
+        "category": "Wildlife",
+        "location": "Tafi Atome, Volta Region",
+        "description": "This community-led ecotourism experience offers a rare opportunity to connect with habituated Mona monkeys, which are considered sacred messengers of the gods. The tour blends wildlife interaction with insights into the local Ewe culture and the village's long history of conservation.",
+        "image_url": "images/monkey.webp",
+        "tour_highlights": [
+            "Interactive experience feeding and photographing habituated Mona monkeys.",
+            "Guided nature walk through a traditional sacred grove forest.",
+            "Cultural immersion in Tafi Atome village to see daily traditional activities.",
+            "Learn about the 200-year history and spiritual significance of the sanctuary.",
+            "Optional visit to the nearby Tafi Abuipe Kente weaving village."
+        ]
+    },
+    {
+        "tour_name": "The Wli Waterfalls Trek",
+        "category": "Wildlife",
+        "location": "Wli-Afegame, Volta Region",
+        "description": "Visit the highest waterfall in West Africa, locally known as Agumatsa, meaning 'Allow Me to Flow.' This tour takes you through the lush Agumatsa Wildlife Sanctuary, crossing several wooden bridges over mountain streams to reach the base of a spectacular 80-meter cascade.",
+        "image_url": "images/waterfall.webp",
+        "tour_highlights": [
+            "Hike to West Africa's tallest waterfall, cascading from an 80-meter cliff.",
+            "Swim in the refreshing natural plunge pool at the base of the lower falls.",
+            "Witness thousands of fruit bats nesting on the dramatic cliffs above.",
+            "Trek through the biodiverse Agumatsa Wildlife Sanctuary forest.",
+            "Choose between an easy flat walk (Lower Falls) or a strenuous mountain hike (Upper Falls)."
+        ]
+    },
+    {
+        "tour_name": "The Larabanga Ancient Mosque Tour",
+        "category": "Historical",
+        "location": "Larabanga, Savannah Region",
+        "description": "This specialized tour focuses on the architectural and spiritual legacy of the oldest mosque in Ghana. It offers a deep dive into 15th-century Sudanese history and the unique mud-and-stick building techniques of the Savannah Region.",
+        "image_url": "images/mosque.webp",
+        "tour_highlights": [
+            "Visit the 15th-century Sudanese-style mud mosque.",
+            "Admire the unique architectural mud-and-stick design.",
+            "Hear the mystical history of the 'Sacred Stone'.",
+            "Learn about local shea butter production in the village.",
+            "Explore traditional weaving techniques with local artisans."
         ]
     }
 ]

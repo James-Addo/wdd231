@@ -120,8 +120,8 @@ fetchTours().then((tours) => displayTours(tours));
 
 
 const bookNowButton = document.getElementById('book-now');
+const bookingForm = document.querySelector('.booking-form');
+
 bookNowButton.addEventListener('click', () => {
-  window.location.href = 'book.html';
+  bookingForm.scrollIntoView({ behavior: 'smooth' });
 });
-
-

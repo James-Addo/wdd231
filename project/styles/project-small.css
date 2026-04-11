@@ -515,6 +515,8 @@ dialog {
     background: none;
     color: var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    font-size: 21px;
+    margin-bottom: 10px;
 }
 
 #current-weather {
@@ -542,7 +544,7 @@ dialog {
 }
 
 #why-choose-us h2 {
-    margin-top: 10px;
+    margin: 30px auto 15px;
     text-align: center;
     font-size: 21px;
     background: none;
@@ -604,6 +606,12 @@ footer {
     background-color: #ddd;
 }
 
+.demo-video {
+    margin-top: 10px;
+}
+
+
+
 /* ...............Grid and List Views...................... */
 main {
     padding: 20px;
@@ -627,7 +635,7 @@ main {
     font-weight: bolder;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .menu button:hover {
@@ -637,6 +645,10 @@ main {
 /* ..................End............ */
 
 /* .........Book form................ */
+.book-form-container {
+    margin-top: 50px;
+}
+
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -715,7 +727,7 @@ input[type="submit"]:hover {
     font-size: 22px;
     font-weight: bold;
     font-style: italic;
-    margin: 10px 0 0 45px;
+    margin: 10px 0 0 28px;
     text-align: center;
 }
 
@@ -789,4 +801,23 @@ h3 {
     text-align: center;
     font-family: var(--body-font);
     line-height: 40px;
+}
+
+/* .........Attributions Page............... */
+
+.tour-section {
+    margin-top: 30px;
+}
+
+.home-section div, .tour-section div {
+    margin: 20px 0 0 40px;
+}
+
+.home-section p, .tour-section p {
+    margin-top: 20px;
+
+}
+
+#top-destination, #tour-image, #our-services {
+    margin-left: 30px;
 }

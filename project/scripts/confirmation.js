@@ -1,10 +1,17 @@
 const urlParams = new URLSearchParams(window.location.search);
-document.getElementById('name').textContent = urlParams.get('name');
-document.getElementById('email').textContent = urlParams.get('email');
-document.getElementById('phone').textContent = urlParams.get('phone');
-document.getElementById('tour').textContent = urlParams.get('tour');
-document.getElementById('participants').textContent = urlParams.get('participants');
-document.getElementById('date').textContent = urlParams.get('date');
-document.getElementById('timestamp').textContent = urlParams.get('timestamp');
 
+const name = urlParams.get('name');
+const email = urlParams.get('email');
+const phone = urlParams.get('phone');
+const tour = urlParams.get('tour');
+const participants = urlParams.get('participants');
+const date = urlParams.get('date');
+const timestamp = urlParams.get('timestamp');
 
+document.getElementById('name').textContent = name;
+document.getElementById('email').textContent = email;
+document.getElementById('phone').textContent = phone;
+document.getElementById('tour').textContent = tour;
+document.getElementById('participants').textContent = participants;
+document.getElementById('date').textContent = date;
+document.getElementById('timestamp').textContent = timestamp;
