@@ -36,10 +36,10 @@ function getRandomTours(tours, count) {
     let shuffled = [...tours];
     const limit = Math.min(count, shuffled.length);
     for (let i = 0; i < limit; i++) {
-        const randomPos = Math.floor(Math.random() * shuffled.length);
+        const randomPosition = Math.floor(Math.random() * shuffled.length);
         const temp = shuffled[i];
-        shuffled[i] = shuffled[randomPos];
-        shuffled[randomPos] = temp;
+        shuffled[i] = shuffled[randomPosition];
+        shuffled[randomPosition] = temp;
     }
     return shuffled.slice(0, limit);
 }
