@@ -6,10 +6,9 @@ const modalTitle = document.getElementById('modal-title');
 const modalList = document.getElementById('modal-list');
 const closeBtn = document.getElementById('close-modal-2');
 
-// 1. Define the function to handle showing the modal
 function showAttractions(city) {
     modalTitle.textContent = city.name;
-    modalList.innerHTML = ''; // Clear previous list
+    modalList.innerHTML = '';
 
     city.attraction_list.forEach(attraction => {
         const listItem = document.createElement('li');
@@ -20,7 +19,6 @@ function showAttractions(city) {
     modal.showModal();
 }
 
-// 2. Build the cards and attach listeners directly (as per image format)
 cities.forEach(city => {
     const destinationCard = document.createElement('div');
     destinationCard.classList.add('destination-card');
@@ -32,7 +30,6 @@ cities.forEach(city => {
         <button class="attractions">View Attractions</button>
     `;
 
-    // Attach listener inside the loop - no need for data-attributes
     destinationCard.querySelector('.attractions').addEventListener('click', () => {
         showAttractions(city);
     });
@@ -40,7 +37,6 @@ cities.forEach(city => {
     tourGrid.appendChild(destinationCard);
 });
 
-// 3. Close modal logic
 closeBtn.addEventListener('click', () => {
     modal.close();
 });
