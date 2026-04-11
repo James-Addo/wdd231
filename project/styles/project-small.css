@@ -295,7 +295,7 @@ dialog {
     text-align: center;
     font-weight: bolder;
     font-size: 17.5px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .tour-card p {
